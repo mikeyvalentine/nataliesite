@@ -1,0 +1,116 @@
+@font-face{
+    font-family: 'auth';
+    src: url('auth.otf');
+}
+@font-face{
+    font-family: 'sq';
+    src: url('square.otf');
+}
+@font-face{
+    font-family: 'lib';
+    src: url('l;ib.ttf');
+}
+*, html{
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: #f5f5f5;
+}
+#maindiv{
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    vertical-align: middle;
+    flex-direction: column;
+
+}
+#logo{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'lib';
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    transition: all .1s;
+}
+#logo:hover{
+    transform: scale(1.03);
+}
+#bio{
+    font-size: 1.5em;
+    font-weight: 600;
+    max-width: 700px;
+    font-family: 'lib';
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+#links{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+#links a{
+    background-color: #adff2f;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'lib';
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    transition: all .1s;
+    margin: 10px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #adff2f;
+}
+#links a:hover{
+    box-shadow: 0px 0px 30px #ffff00;
+    transform: scale(1.1);
+}
+#work img{
+    max-width: 300px;
+}
+#work{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+#work a{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'lib';
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    transition: all .1s;
+    margin: 10px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 30px;
+}
+@keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+@media (max-device-width:500px){
+  }
