@@ -113,4 +113,7 @@ body{
     to {transform: rotate(360deg);}
   }
 @media (max-device-width:500px){
+    #maindiv{
+        font-size: 10em;
+    }
   }
