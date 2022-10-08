@@ -1,14 +1,14 @@
 @font-face{
     font-family: 'auth';
-    src: url('auth.otf');
+    src: url('/nataliesite/auth.otf');
 }
 @font-face{
     font-family: 'sq';
-    src: url('square.otf');
+    src: url('/nataliesite/square.otf');
 }
 @font-face{
     font-family: 'lib';
-    src: url('l;ib.ttf');
+    src: url('/nataliesite/l;ib.ttf');
 }
 *, html{
     margin: none;
