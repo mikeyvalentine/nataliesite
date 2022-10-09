@@ -1,14 +1,14 @@
 @font-face{
     font-family: 'auth';
-    src: url('/auth.otf');
+    src: url('auth.otf');
 }
 @font-face{
     font-family: 'ar';
-    src: url('/AURORA-PRO.otf');
+    src: url('AURORA-PRO.otf');
 }
 @font-face{
     font-family: 'lib';
-    src: url('/l;ib.ttf');
+    src: url('l;ib.ttf');
 }
 *, html{
     margin: none;
