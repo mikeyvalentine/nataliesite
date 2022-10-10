@@ -310,6 +310,7 @@ body{
     width: 150px;
     -webkit-filter: drop-shadow(0px 0px 5px #f5f5f5);
     filter: drop-shadow(0px 0px 5px #f5f5f5);
+    animation: example 10s linear 0s infinite;
 }
 #flowernospin{
     margin: 40px 25px 0px 25px;
