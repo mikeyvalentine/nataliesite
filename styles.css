@@ -3,8 +3,8 @@
     src: url('auth.otf');
 }
 @font-face{
-    font-family: 'ar';
-    src: url('AURORA-PRO.otf');
+    font-family: 'bb';
+    src: url('Basteleur-Moonlight.woff');
 }
 @font-face{
     font-family: 'lib';
@@ -42,120 +42,250 @@ body{
     align-items: center;
     vertical-align: middle;
     flex-direction: column;
+    justify-content: baseline;
+    margin-bottom: 20px;
 }
-#title{
-    text-align: center;
+.title{
+    width: 100%;
+    height: 50%;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: baseline;
 }
-#logo{
-    text-align: center;
-    font-size: 5em;
-    font-family: 'lib';
-    font-weight: 900;
+.logo{
+    padding: 50px 0px 25px 50px;
+    font-style: italic;
+    text-align: left;
+    font-size: 4em;
+    font-family: 'bb';
+    font-weight: 100;
     text-decoration: none;
-    color: #000;
-    transition: transform .1s;
-    text-shadow: 0px 1px 2px #000;
+    color: #f5f5f5;
+    transition: all .1s;
+    text-shadow: 0px 0px 3px #f5f5f5;
+    max-width: 800px;
 }
-#logo:hover{
-    transform: scale(1.03);
+.logo:hover{
+    text-shadow: 0px 0px 7px #f5f5f5;
 }
-#title p{
+#mainlogo{
+    font-size: 5.5em;
+}
+.title p{
+    padding: 0px 50px 0px 50px;
     font-family: 'lib';
     font-style: italic;
-}
-#bio{
-    position: absolute;
-    top: 30%;
+    color: #f5f5f5;
+    background-color: #add8e6;
     font-style: italic;
-    font-size: 1.5em;
-    font-weight: 600;
-    width: 60%;
-    max-width: 500px;
-    font-family: 'lib';
-    text-align: center;
+    box-shadow: 0px 0px 5px #add8e6;
+    text-shadow: 0px 0px 1px #f5f5f5;
 }
 .links{
-    padding-top: 30px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     height: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    vertical-align: middle;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 .links a{
-    width: 90%;
+    width: 70%;
     max-width: 600px;
+    min-width: 400px;
     font-size: 3em;
     font-family: 'lib';
-    font-weight: 900;
+    font-weight: 100;
     text-decoration: none;
-    color: #000;
-    padding: 20px 0px 20px 0px;
-    margin: 50px 0px 50px 0px;
-    text-shadow: 0px 1px 2px #000;
-    border-radius: 50px;
+    color: #f5f5f5;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 50px 10px 0px;
+    text-shadow: 0px 0px 3px #f5f5f5;
     transition: all .1s;
+    border-bottom: 2px solid #f5f5f5b0;
+}
+
+#about{
+    color: #eee8aa;
 }
 .links a:hover{
-    box-shadow: 0px 0px 10px #adff2f;
-    transform: scale(1.03);
-    background-color: #acff2f74;
-    text-shadow: 0px 0px 4px #000;
-    transform: scaleX(1.03);
+    text-shadow: 0px 0px 8px #f5f5f5;
+    transform: translateX(-10px);
+    font-style: italic;
 }
-
-
-
-
-#work img{
-    max-width: 300px;
+#navlogo{
+    max-width: 70%;
 }
-#work{
+#sublogo{
+    font-size: 2em;
+    width: auto;
+    padding-bottom: 50px;
+    max-width: 67%;
+    font-family: 'lib';
+}
+#subtitle{
+    flex-direction: row;
+}
+#current{
+    font-size: 2em;
+    font-style: normal !important;
+    font-family: 'bb';
+}
+#tabs{
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    align-items: flex-end;
     text-align: center;
-    width: 100%;
+    padding: 50px 50px 50px 0px;
+}
+#tabs a{
+    font-size: 1em;
+    font-family: 'lib';
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0px 10px 25px;
+    text-shadow: 0px 0px 1px #f5f5f5;
+    border-radius: 50px;
+    transition: all .1s;
+    background-color: #add8e6;
+    font-style: italic;
+    box-shadow: 0px 0px 5px #add8e6;
+}
+#tabs a:hover{
+    box-shadow: 0px 0px 20px #add8e67b;
+    background-color: #add8e67b;
+    transform: translateX(-5px)
+}
+.work img{
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 0px 3px #000;
+    transition: all .1s;
+}
+.work img:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 10px #fff;
+    border-radius: 5px;
+}
+#firstimg:hover{
+    transform: translateY(100px) scale(1.4);
+}
+.work{
+    width: auto;
+    text-align: center;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     vertical-align: middle;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
-#work a{
+.work a{
+    width: 90%;
     text-align: center;
     font-size: 2em;
     font-family: 'lib';
-    font-weight: 900;
+    font-weight: 100;
     text-decoration: none;
     color: #000;
+    text-shadow: 0px 1px 2px #000;
     transition: all .1s;
-    margin: 10px;
-    padding: 3px 10px 3px 10px;
-    border-radius: 30px;
+}
+#aboutdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #add8e6a8;
+    box-shadow: 0px 0px 15px #add8e6;
+    border-radius: 500px;
+    padding: 20px 50px 0px 50px;
+}
+#aboutdiv p{
+    padding: 0px 50px 0px 50px;
+    font-size: 1.3em;
+    max-width: 500px;
+    font-family: 'lib';
+    font-style: italic;
+    color: #f5f5f5;
+    font-style: italic;
+    text-shadow: 0px 0px 1px #000000;
+    text-align: center;
+}
+#aboutdiv a{
+    font-size: 2em;
+    color:#eee8aa;
+    padding: 0px 50px 0px 50px;
+    max-width: 500px;
+    font-family: 'lib';
+    font-style: italic;
+    font-style: italic;
+    text-shadow: 0px 0px 2px #eee8aa;
+    text-align: center;
+    transition: all .1s;
+}
+#aboutdiv a:hover{
+    text-shadow: 0px 0px 8px #add8e6;
+    font-style: italic;
+    color:#add8e6;
+    transform: scale(1.03);
+}
+#aboutdiv img{
+    max-width: 500px;
+    box-shadow: 0px 0px 2px #000;
+    border-radius: 200px;
+}
+#specialtab{
+    background-color: #eee8aa;
+}
+#spacer{
+    height: 50px;
+    width: 100%;
 }
 @keyframes example {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
   }
 @media (max-device-width:500px){
-    #logo{
-        font-size: 10em;
+    .title{
+        height: 25%;
     }
-    #title p{
-        font-size: 3em;
+    #subtitle{
+        height: 20%;
+    }
+    .logo{
+        font-size: 6em;
+    }
+    #mainlogo{
+        font-size: 7em;
+    }
+    .title p{
+        font-size: 2.5em;
     }
     .links a{
-        font-size: 6em;
+        font-size: 5em;
+        border-bottom: 2px solid #f5f5f5;
     }
     #bio{
         font-size: 3em;
+    }
+    #tabs a{
+        font-size: 2.5em;
+    }
+    #aboutdiv p{
+        font-size: 3em;
+    }
+    #aboutdiv a{
+        font-size: 3em;
+    }
+    #aboutdiv{
+        padding-top: 100px;
     }
   }

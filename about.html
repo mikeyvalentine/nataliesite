@@ -3,21 +3,31 @@
 <!--created by michael lawrence @dzychainn-->
     <head>
         <meta charset="UTF-8">
-        <link rel='stylesheet' href='/styles.css'>
+        <link rel='stylesheet' href='../styles.css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>About</title>
-        <link rel="icon" type="image/x-icon" href="/natti.ico">
+        <link rel="icon" type="image/x-icon" href="../natti.ico">
     </head>
     <body>
         <div id='background'>
-            <video loop muted autoplay poster="images/clouds.mp4">
-                <source src="/clouds.mp4" type="video/mp4">
+            <video loop muted autoplay poster="../clouds.mp4">
+                <source src="../clouds.mp4" type="video/mp4">
             </video>
         </div>
         <div id="maindiv"> 
-            <a href="index.html" id="logo">Natalie Nie</a>
-            <p id="bio">Hello! I am a technical apparel designer studying at the Portland Fashion Institute and will complete schooling in May 2023. <br><br>I have a strong interest in pattern making, product development and creation of technical packages.<br>☺</p>
+            <div class="title" id="subtitle">            
+                <a href="" class="logo" id="sublogo"><span id="current">About Me</span></a>
+                <div id="tabs">
+                    <a href="./contact.html">Contact</a>
+                    <a href="./index.html">Home🠐</a>
+                </div>
+            </div>
+            <div id="aboutdiv">
+                <a href="" onclick="return false"><img src="./Portfolio/000421740018.JPG"></a>
+                <p>Hello! I am a technical apparel designer studying at the Portland Fashion Institute and will complete schooling in May 2023. I have a strong interest in pattern making, product development and creation of technical packages.<br>☺</p>
+            </div>
+            <div id="spacer"></div>
         </div>
-        <script async src="/script.js"></script>
+        <script async src="script.js"></script>
     </body>
 </html>
