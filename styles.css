@@ -286,7 +286,7 @@ body{
     border-radius: 300px;
 }
 #specialtab{
-    background-color: #eee8aa;
+    padding: none !important;
 }
 #spacer{
     height: 100px;
@@ -295,9 +295,25 @@ body{
 #flower{
     margin: 40px;
     width: 150px;
+    -webkit-filter: drop-shadow(0px 0px 5px #f5f5f5);
+    filter: drop-shadow(0px 0px 5px #f5f5f5);
+}
+#flowernospin{
+    margin: 50px 25px 0px 25px;
+    width: 150px;
     animation: example 10s linear 0s infinite;
     -webkit-filter: drop-shadow(0px 0px 5px #f5f5f5);
     filter: drop-shadow(0px 0px 5px #f5f5f5);
+}
+#specialtabs{
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    align-items: flex-end;
+    text-align: center;
+    padding: none;
 }
 @keyframes example {
     from {transform: rotate(0deg);}
