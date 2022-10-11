@@ -10,17 +10,16 @@
     </head>
     <body>
         <div id='background'>
-            <video preload='metadata' loop muted autoplay poster="images/clouds.mp4">
-                <source src="clouds.mp4" type="video/mp4">
-            </video>
+            <img rel="preload" as="image" onclick="return false"><img id='firstimg' src='../cloudbackground.png'>
         </div>
         <div id="maindiv"> 
             <div class="title">            
                 <a href="" onclick="return false" class="logo" id="navlogo">Creative Design</a>
                 <p>&nbsp;</p>
             </div>
-            <div id="tabs">
-                <a href="./index.html">Home</a>
+            <a href="javascript:history.back()" class="arrow" id="left">&lt;<br>BACK</a>
+            <div id="specialtabs">
+                <a id="specialtab" href="../index.html"><img id='flowernospin' src="../flower.png"></a>
             </div>
             <div class="links">
                 <a id='techdev' href="./mockvisualmerchandisingeverlane.html">Mock Visual Merchandising - Everlane </a>

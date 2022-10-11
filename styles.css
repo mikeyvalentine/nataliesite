@@ -19,11 +19,11 @@ body{
     position: fixed;
     z-index: -100;
     left: 0;
-    top: 0;
+    top: -10px;
 }
 #background video{
     width: 100vw;
-    height: 100vh;
+    height: 102vh;
     object-fit: fill;
 }
 #maindiv{
@@ -123,7 +123,7 @@ body{
     max-width: 70%;
 }
 #sublogo{
-    font-size: 2em;
+    font-size: 4vh;
     width: auto;
     max-width: 67%;
     font-family: 'lib';
@@ -145,7 +145,6 @@ body{
     font-style: normal;
     align-items: flex-end;
     text-align: center;
-    padding: 50px 50px 50px 50px;
     z-index: 100;
 }
 #tabs a{
@@ -169,43 +168,57 @@ body{
 }
 #arrowcontainer{
     position: fixed;
-    top: 10%;
+    top: 60%;
     bottom: 0;
-    width: 100%;
-    height: 100%;
+    left: 0;
     display: flex;
+    height: 100px;
     flex-direction: row;
-    justify-content: space-between;
     vertical-align: middle;
     align-items: center;
-    animation: nudge 1s normal 2 ease-in-out;
+    animation: nudgeleft 1s normal 2 ease-in-out;
+    margin: 10px;
 }
-#arrow{
+.arrow{
+    position: fixed;
+    top: 60%;
+    bottom: 0;
+    margin: 0px 25px 0px 25px;
+    z-index: 100 !important;
     height: 75px;
-    width: 50px;
     font-family: 'lib';
     color:#f5f5f5;
     text-align: center;
-    margin: 50px;
     text-shadow: 0px 0px 1px #f5f5f5;
     border-radius: 25px;
     transition: all .1s;
     text-decoration: none;
     line-height: 1.4em;
 }
-#arrow:hover{
+#right{
+    right: 0;
+    animation: nudgeright 1s normal 2 ease-in-out;
+}
+#left {
+    left: 0;
+    animation: nudgeleft 1s normal 2 ease-in-out;
+}
+.arrow:hover{
     color:#add8e6;
     text-shadow: 0px 0px 10px #f5f5f5;
     transform: scale(1.03);
 }
 .work img{
-    width: 80%;
-    max-width: 500px;
+    height: 90vh;
     box-shadow: 0px 0px 3px #000;
     transition: all .1s;
 }
+#landscape{
+    width: 70vw;
+    height: auto !important;
+}
 .work img:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
     box-shadow: 0px 0px 10px #fff;
     border-radius: 5px;
 }
@@ -226,7 +239,6 @@ body{
     padding-top: 25px;
 }
 .work a{
-    width: 90%;
     text-align: center;
     font-size: 2em;
     font-family: 'lib';
@@ -235,11 +247,13 @@ body{
     color: #000;
     text-shadow: 0px 1px 2px #000;
     transition: all .1s;
+    margin-bottom: 50px;
 }
 #copy{
-    width: 50vw;
-    max-width: 500px;
-    font-size: 1.2em;
+    text-align: left;
+    width: 70vw;
+    max-width: 900px;
+    font-size: 1.5vw;
     font-family: 'lib';
     font-weight: 100;
     text-shadow: 0px 1px 3px rgb(99, 99, 99);
@@ -327,7 +341,7 @@ body{
     right: 0;
     position: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-style: normal;
     align-items: flex-end;
     text-align: center;
@@ -343,15 +357,26 @@ body{
         transform: translateX(0px);
     }
 }
-@keyframes nudge {
+@keyframes nudgeleft {
     0% {
-        transform: scaleX(1);
+        transform: translateX(0);
     }
     50% {
-        transform: scaleX(1.01);
+        transform: translateX(-5px);
     }
     100% {
-        transform: scaleX(1);
+        transform: translateX(0);
+    }
+}
+@keyframes nudgeright {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 @keyframes example {

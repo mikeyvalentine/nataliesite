@@ -10,9 +10,7 @@
     </head>
     <body>
         <div id='background'>
-            <video preload='metadata' loop muted autoplay poster="images/clouds.mp4">
-                <source src="clouds.mp4" type="video/mp4">
-            </video>
+            <img rel="preload" as="image" onclick="return false"><img id='firstimg' src='../cloudbackground.png'>
         </div>
         <div id="maindiv"> 
             <div class="title">            
@@ -22,6 +20,7 @@
                 <a id="specialtab" href="../index.html"><img id='flowernospin' src="../flower.png"></a>
             </div>
             <p>&nbsp;</p>
+            <a href="javascript:history.back()" class="arrow" id="left">&lt;<br>BACK</a>
             <div class="links">
                 <a id='techdev' href="./aw2023womensutilityworkwearcollection/aw2023womensutilityworkwear.html">AW2023 Women's Utility Workwear Collection</a>
                 <a href="./polarfleecetechpack/polarfleecetechpack.html">Polar Fleece Tech Pack</a>

@@ -10,17 +10,16 @@
     </head>
     <body>
         <div id='background'>
-            <video preload='metadata' loop muted autoplay poster="images/clouds.mp4">
-                <source src="clouds.mp4" type="video/mp4">
-            </video>
+            <img rel="preload" as="image" onclick="return false"><img id='firstimg' src='../cloudbackground.png'>
         </div>
         <div id="maindiv"> 
             <div class="title" id="subtitle">            
                 <a href="" onclick="return false" class="logo" id="sublogo"><span id="current">Apparel Sketches</span></a>
             </div>
-            <div id="tabs">
-                <a href="./index.html">Home</a>
+            <div id="specialtabs">
+                <a id="specialtab" href="../index.html"><img id='flowernospin' src="../flower.png"></a>
             </div>
+            <a href="javascript:history.back()" class="arrow" id="left">&lt;<br>BACK</a>
             <div class="work">
                 <a href="" rel="preload" as="image" onclick="return false"><img id='firstimg' src="./Portfolio/3rd_ Apparel Sketches/1.jpg"></a>
                 <a href="" rel="preload" as="image" onclick="return false"><img id='firstimg' src="./Portfolio/3rd_ Apparel Sketches/2.jpg"></a>
