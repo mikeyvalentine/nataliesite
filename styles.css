@@ -26,11 +26,6 @@ body{
     top: -10px;
     display: none;
 }
-#background video{
-    width: 150vw;
-    height: 102vh;
-    object-fit: fill;
-}
 #maindiv{
     width: 100%;
     height: 100%;
@@ -99,28 +94,98 @@ body{
     flex-wrap: wrap;
     align-items: flex-end;
 }
-.links a{
+.links div{
     width: 70%;
     max-width: 600px;
     min-width: 400px;
-    font-size: 2.3em;
-    font-family: 'lib';
-    font-weight: 100;
-    text-decoration: none;
-    color: #f5f5f5;
     padding: 10px 0px 10px 0px;
     margin: 10px 50px 10px 0px;
     text-shadow: 0px 0px 3px #f5f5f5;
     transition: all .1s;
+    display: flex;
+    flex-direction: column;
+    
+}
+.links div:hover{
+    font-style: italic;
+}
+.mainlinks{
+    font-size: 2.3em;
+    font-family: 'lib';
+    font-weight: 100;
+    color: #f5f5f5;
+    text-decoration: none;
     border-bottom: 2px solid #f5f5f5b0;
+    transition: all .1s;
 }
-
-#about{
+.techlinks{
     color: #eee8aa;
-    border-bottom: 2px solid #eee8aaba;
+    font-family: 'lib';
+    font-size: 1.5em;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 50px 10px 0px;
+    text-shadow: 0px 0px 3px #f5f5f5;
+    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    border-bottom: 2px solid #eee8aa;
+    text-decoration: none;
+    font-style: normal !important;
 }
-.links a:hover{
-    text-shadow: 0px 0px 8px #f5f5f5;
+.techlinks:hover{
+    font-style: italic !important;
+    text-shadow: 0px 0px 12px #f5f5f5;
+    transform: translateX(-10px);
+}
+.createlinks{
+    color: #eee8aa;
+    font-family: 'lib';
+    font-size: 1.5em;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 50px 10px 0px;
+    text-shadow: 0px 0px 3px #f5f5f5;
+    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    border-bottom: 2px solid #eee8aa;
+    text-decoration: none;
+    font-style: normal !important;
+}
+.infolinks{
+    color: #eee8aa;
+    font-family: 'lib';
+    font-size: 1.5em;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 50px 10px 0px;
+    text-shadow: 0px 0px 3px #f5f5f5;
+    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    border-bottom: 2px solid #eee8aa;
+    text-decoration: none;
+    font-style: normal !important;
+}
+.createlinks:hover{
+    font-style: italic !important;
+    text-shadow: 0px 0px 12px #f5f5f5;
+    transform: translateX(-10px);
+}
+.infolinks:hover{
+    font-style: italic !important;
+    text-shadow: 0px 0px 12px #f5f5f5;
+    transform: translateX(-10px);
+}
+.mainlinks:hover{
+    text-shadow: 0px 0px 12px #f5f5f5;
     transform: translateX(-10px);
     font-style: italic;
 }
@@ -214,18 +279,21 @@ body{
     transform: scale(1.03);
 }
 .work img{
-    height: 90vh;
+    filter: saturate(70%);
+    height: 80vh;
     box-shadow: 0px 0px 3px #000;
     transition: all .1s;
+    z-index: 90;
 }
 #landscape{
-    width: 70vw;
+    width: 50vw;
     height: auto !important;
 }
 .work img:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 10px #fff;
     border-radius: 5px;
+    z-index: 100 !important;
 }
 #firstimg:hover{
     transform: translateY(100px) scale(1.4);
@@ -264,7 +332,7 @@ body{
     text-shadow: 0px 1px 3px rgb(99, 99, 99);
     color: #f5f5f5;
     text-decoration: none;
-    padding: 50px;
+    padding: 80px;
     margin: 50px 0px 50px 0px;
     border-radius: 50px;
     transition: all .1s;
@@ -434,9 +502,6 @@ body{
     }
     #background video{
         display: none;
-    }
-    #mainlogo{
-        content: 'Natalie<br>Nie';
     }
     #flowernospin{
         width: 200px;
