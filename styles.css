@@ -11,7 +11,11 @@
     padding: none;
 }
 body{
-    background-color: #f5f5f5;
+    background: url('./cloudbackground.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #background{
     margin: none;
@@ -20,9 +24,10 @@ body{
     z-index: -100;
     left: 0;
     top: -10px;
+    display: none;
 }
 #background video{
-    width: 100vw;
+    width: 150vw;
     height: 102vh;
     object-fit: fill;
 }
@@ -383,25 +388,37 @@ body{
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
   }
-@media (max-device-width:500px){
+@media (max-device-width:900px){
     .title{
-        height: 18%;
+        height: 20vh;
+
     }
     #subtitle{
         height: 20%;
     }
     .logo{
-        font-size: 6em;
+        font-size: 7em;
+
     }
     #mainlogo{
-        font-size: 7em;
+        font-size: 7vh;
+
     }
     #maindiv p{
         font-size: 2.5em;
+        text-align: center;
+        padding: 0px;
+    }
+    .links{
+        align-items: center;
     }
     .links a{
-        font-size: 4em;
+        font-size: 5em;
         border-bottom: 2px solid #f5f5f5;
+        text-align: center;
+        width: 90%;
+        max-width: 900px;
+        margin: 0px 0px 80px 0px;
     }
     #bio{
         font-size: 3em;
@@ -418,9 +435,10 @@ body{
     #background video{
         display: none;
     }
-    body{
-        background-image: url(./cloud.png);
-        background-repeat: no-repeat;
-        background-size: 200vh;
+    #mainlogo{
+        content: 'Natalie<br>Nie';
+    }
+    #flowernospin{
+        width: 200px;
     }
   }
