@@ -38,11 +38,9 @@ infodiv.onclick=function(){
     infovis=true;
     Array.from(infolinks).forEach(makeVisible);
     Array.from(infolinks).forEach(opacityUp);
-    window.scroll({
-      top: 100,
-      left: 0,
-      behavior: 'smooth'
-    });
+    setTimeout(function(){
+      window.scrollTo({ top: 4000, behavior: 'smooth' })
+      }, 100);
   } else{
     infovis=false;
     Array.from(infolinks).forEach(makeHidden);

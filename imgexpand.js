@@ -1,5 +1,4 @@
 const img = document.getElementsByTagName('img');
-
 Array.from(img).forEach(element => 
     element.onclick = function(){
         if (element.classList.contains('expanded')){
