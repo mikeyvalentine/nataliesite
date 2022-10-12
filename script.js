@@ -65,3 +65,6 @@ function opacityDown(x){
     x.style.opacity = 0;
   }, 1);
 }
+document.body.onload = function(){
+  document.getElementById('hidden').src ='./postersandboards.html';
+}

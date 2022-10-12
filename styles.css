@@ -17,13 +17,7 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-#background{
-    margin: none;
-    padding: none;
-    position: fixed;
-    z-index: -100;
-    left: 0;
-    top: -10px;
+#preload{
     display: none;
 }
 #maindiv{
@@ -130,7 +124,7 @@ body{
     padding: 10px 0px 10px 0px;
     margin: 10px 50px 10px 0px;
     text-shadow: 0px 0px 3px #f5f5f5;
-    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    transition: opacity .3s, transform .1s, text-shadow .1s, font-style .1s;
     border-bottom: 2px solid #eee8aa;
     text-decoration: none;
     font-style: normal !important;
@@ -152,7 +146,7 @@ body{
     padding: 10px 0px 10px 0px;
     margin: 10px 50px 10px 0px;
     text-shadow: 0px 0px 3px #f5f5f5;
-    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    transition: opacity .3s, transform .1s, text-shadow .1s, font-style .1s;
     border-bottom: 2px solid #eee8aa;
     text-decoration: none;
     font-style: normal !important;
@@ -169,7 +163,7 @@ body{
     padding: 10px 0px 10px 0px;
     margin: 10px 50px 10px 0px;
     text-shadow: 0px 0px 3px #f5f5f5;
-    transition: opacity .5s, transform .1s, text-shadow .1s, font-style .1s;
+    transition: opacity .3s, transform .1s, text-shadow .1s, font-style .1s;
     border-bottom: 2px solid #eee8aa;
     text-decoration: none;
     font-style: normal !important;
@@ -253,17 +247,23 @@ body{
     position: fixed;
     top: 60%;
     bottom: 0;
-    margin: 0px 25px 0px 25px;
+    margin: 0px 5px 0px 5px;
+    height: 10px;
+    padding: 10px 10px 10px 10px;
     z-index: 100 !important;
-    height: 75px;
     font-family: 'lib';
     color:#f5f5f5;
     text-align: center;
     text-shadow: 0px 0px 1px #f5f5f5;
+    box-shadow: 0px 0px 3px #add8e6;
     border-radius: 25px;
     transition: all .1s;
     text-decoration: none;
     line-height: 1.4em;
+    background-color: #add8e6a9;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 #right{
     right: 0;
@@ -274,29 +274,22 @@ body{
     animation: nudgeleft 1s normal 2 ease-in-out;
 }
 .arrow:hover{
-    color:#add8e6;
     text-shadow: 0px 0px 10px #f5f5f5;
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 .work img{
     filter: saturate(70%);
     height: 80vh;
     box-shadow: 0px 0px 3px #000;
     transition: all .1s;
-    z-index: 90;
 }
 #landscape{
     width: 50vw;
     height: auto !important;
 }
 .work img:hover{
-    transform: scale(1.2);
     box-shadow: 0px 0px 10px #fff;
     border-radius: 5px;
-    z-index: 100 !important;
-}
-#firstimg:hover{
-    transform: translateY(100px) scale(1.4);
 }
 .work{
     width: auto;
@@ -321,18 +314,22 @@ body{
     text-shadow: 0px 1px 2px #000;
     transition: all .1s;
     margin-bottom: 50px;
+    z-index: 5;
+}
+.work a:hover{
+    z-index: 100 !important;
 }
 #copy{
     text-align: left;
     width: 70vw;
     max-width: 900px;
-    font-size: 1.5vw;
+    font-size: 1em;
     font-family: 'lib';
     font-weight: 100;
     text-shadow: 0px 1px 3px rgb(99, 99, 99);
     color: #f5f5f5;
     text-decoration: none;
-    padding: 80px;
+    padding: 60px;
     margin: 50px 0px 50px 0px;
     border-radius: 50px;
     transition: all .1s;
@@ -400,7 +397,7 @@ body{
     animation: example 10s linear 0s infinite;
 }
 #flowernospin{
-    margin: 40px 25px 0px 25px;
+    margin: 25px;
     width: 100px;
     animation: example 10s linear 0s infinite;
     -webkit-filter: drop-shadow(0px 0px 5px #f5f5f5);
@@ -408,6 +405,11 @@ body{
 }
 #specialtab:hover{
     transform: scale(1.1);
+}
+#hidden{
+    width: 1px;
+    height: 1px;
+    display: none;
 }
 #specialtabs{
     z-index: 100;
