@@ -37,7 +37,7 @@ body{
 }
 .title{
     width: 100%;
-    height: 30vh;
+    height: auto;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -187,7 +187,7 @@ body{
     max-width: 70%;
 }
 #sublogo{
-    font-size: 4vh;
+    font-size: 5vh;
     width: auto;
     max-width: 67%;
     font-family: 'lib';
@@ -196,7 +196,7 @@ body{
     flex-direction: row;
 }
 #current{
-    font-size: 2em;
+    font-size: 1.3em;
     font-style: normal !important;
     font-family: 'bb';
     color: #eee8aa;
@@ -247,9 +247,9 @@ body{
     position: fixed;
     top: 60%;
     bottom: 0;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 15px 0px 15px;
     height: 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 25px;
     z-index: 100 !important;
     font-family: 'lib';
     color:#f5f5f5;
@@ -320,44 +320,41 @@ body{
     z-index: 100 !important;
 }
 #copy{
-    text-align: left;
-    width: 70vw;
-    max-width: 900px;
-    font-size: 1em;
+    width: 70%;
+    max-width: 1200px;
     font-family: 'lib';
-    font-weight: 100;
-    text-shadow: 0px 1px 3px rgb(99, 99, 99);
     color: #f5f5f5;
+    text-shadow: 0px 1px 2px #f5f5f5;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
     text-decoration: none;
-    padding: 60px;
-    margin: 50px 0px 50px 0px;
-    border-radius: 50px;
+    padding: 70px;
     transition: all .1s;
-    box-shadow: 0px 0px 15px #add8e6;
-    background-color: #add8e681;
-    border-radius: 500px;
 }
 #aboutdiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #add8e681;
-    box-shadow: 0px 0px 15px #add8e6;
+    box-shadow: 0px 0px 30px #add8e6;
     border-radius: 500px;
-    padding: 20px 50px 0px 50px;
+    padding: 20px;
     transition: all .1s;
+    width: 70vw;
+    max-width: 700px;
+    margin-bottom: 100px;
 }
 #aboutdiv:hover{
-    transform: scale(1.03);
+    box-shadow: 0px 0px 60px #add8e6;
 }
 #aboutdiv h1{
+    line-height: 28px;
     text-align: center;
-    padding: 0px 100px 0px 100px;
     font-size: 1.2em;
     max-width: 400px;
     font-weight: 100;
-    text-shadow: 0px 1px 3px rgb(99, 99, 99);
-    color: #f5f5f5;
+    color: #000;
     text-decoration: none;
     font-family: 'lib';  
 }
@@ -377,9 +374,21 @@ body{
     color:#add8e6;
 }
 #aboutdiv img{
+    width: 40vw;
     max-width: 400px;
+    min-width: 350px;
     box-shadow: 0px 0px 2px #000;
     border-radius: 300px;
+}
+#buttoncontainer{
+    width: 60vw;
+    background-color: red;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
 }
 #specialtab{
     padding: none !important;
