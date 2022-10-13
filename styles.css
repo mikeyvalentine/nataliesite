@@ -278,13 +278,12 @@ body{
     transform: scale(1.1);
 }
 .work img{
-    filter: saturate(70%);
     height: 80vh;
     box-shadow: 0px 0px 3px #000;
     transition: all .1s;
 }
 #landscape{
-    width: 50vw;
+    width: 60vw;
     height: auto !important;
 }
 .work img:hover{
@@ -305,19 +304,22 @@ body{
     padding-top: 25px;
 }
 .work a{
+    color: #f5f5f5;
+    text-shadow: 0px 1px 2px #f5f5f5;
+    line-height: 28px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'lib';
     font-weight: 100;
     text-decoration: none;
-    color: #000;
-    text-shadow: 0px 1px 2px #000;
     transition: all .1s;
     margin-bottom: 50px;
     z-index: 5;
 }
 .work a:hover{
     z-index: 100 !important;
+    text-shadow: 0px 0px 10px #f5f5f5;
+    font-style: italic;
 }
 #copy{
     width: 70%;
@@ -333,20 +335,20 @@ body{
     padding: 70px;
     transition: all .1s;
 }
+#yellow{
+    color: #eee8aa !important;
+    border-bottom: 2px solid #eee8aa;
+}
 #aboutdiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 30px #add8e6;
     border-radius: 500px;
     padding: 20px;
     transition: all .1s;
     width: 70vw;
-    max-width: 700px;
+    max-width: 900px;
     margin-bottom: 100px;
-}
-#aboutdiv:hover{
-    box-shadow: 0px 0px 60px #add8e6;
 }
 #aboutdiv h1{
     line-height: 28px;
@@ -354,27 +356,40 @@ body{
     font-size: 1.2em;
     max-width: 400px;
     font-weight: 100;
-    color: #000;
+    color: #f5f5f5;
     text-decoration: none;
     font-family: 'lib';  
 }
-#aboutdiv a{
-    font-size: 2em;
-    color:#eee8aa;
-    padding: 0px 50px 25px 50px;
-    max-width: 500px;
-    font-family: 'lib';
-    text-shadow: 0px 0px 2px #eee8aa;
+#textdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: middle;
+    justify-content: baseline;
     text-align: center;
-    transition: all .1s;
 }
-#aboutdiv a:hover{
-    text-shadow: 0px 0px 8px #add8e6;
+#textdiv a{
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'lib';
+    margin: 20px;
+    padding: 20px;
+    background-color: #add8e68c;
+    border-radius: 200px;
+    color: #f5f5f5;
+    box-shadow: 0px 0px 5px #add8e6;
+    transition: all .1s;
+    font-size: 1em;
+}
+#textdiv a:hover{
+    text-shadow: 0px 0px 8px #f5f5f5;
     font-style: italic;
-    color:#add8e6;
+    box-shadow: 0px 0px 15px #add8e6;
+    transform: scale(1.03);
 }
 #aboutdiv img{
-    width: 40vw;
+    width: 100%;
     max-width: 400px;
     min-width: 350px;
     box-shadow: 0px 0px 2px #000;
@@ -382,7 +397,6 @@ body{
 }
 #buttoncontainer{
     width: 60vw;
-    background-color: red;
     height: auto;
     display: flex;
     flex-direction: row;

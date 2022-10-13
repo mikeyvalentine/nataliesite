@@ -1,22 +1,24 @@
 const img = document.getElementsByTagName('img');
 Array.from(img).forEach(element => 
     element.onclick = function(){
-        if (element.classList.contains('expanded')){
-            if (element.id == 'landscape'){
-                element.style.width = '50vw';
-            } else {
-                element.style.height = '80vh';
-            }
-            element.classList.remove('expanded');
+        if (element.id == 'flowernospin'){
         } else {
-            if (element.id == 'landscape'){
-                element.style.width = '80vw';
+            if (element.classList.contains('expanded')){
+                if (element.id == 'landscape'){
+                    element.style.width = '60vw';
+                } else {
+                    element.style.height = '80vh';
+                }
+                element.classList.remove('expanded');
             } else {
-                element.style.height = '120vh';
+                if (element.id == 'landscape'){
+                    element.style.width = '80vw';
+                } else {
+                    element.style.height = '120vh';
+                }
+                element.classList.add('expanded');
+                console.log(1);
             }
-            element.classList.add('expanded');
-            console.log(1);
         }
-
     }
     );

@@ -33,20 +33,6 @@ creatediv.onclick=function(){
   }
 
 }
-infodiv.onclick=function(){
-  if (infovis==false){
-    infovis=true;
-    Array.from(infolinks).forEach(makeVisible);
-    Array.from(infolinks).forEach(opacityUp);
-    setTimeout(function(){
-      window.scrollTo({ top: 4000, behavior: 'smooth' })
-      }, 100);
-  } else{
-    infovis=false;
-    Array.from(infolinks).forEach(makeHidden);
-    Array.from(infolinks).forEach(opacityDown);
-  }
-}
 function makeVisible(x){
   x.style.display = 'inline';
 }
