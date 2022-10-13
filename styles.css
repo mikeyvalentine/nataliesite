@@ -370,7 +370,7 @@ body{
     text-align: center;
 }
 #textdiv a{
-    width: 200px;
+    width: 300px;
     text-align: center;
     text-decoration: none;
     font-family: 'lib';
@@ -483,20 +483,14 @@ body{
     to {transform: rotate(360deg);}
   }
 @media (max-device-width:900px){
-    .title{
-        height: 20vh;
-
-    }
-    #subtitle{
-        height: 20%;
+    .techlinks{
+        font-size: 4em !important;
     }
     .logo{
-        font-size: 7em;
-
+        font-size: 5em !important;
     }
     #mainlogo{
-        font-size: 7vh;
-
+        font-size: 7em !important;
     }
     #maindiv p{
         font-size: 2.5em;
@@ -504,32 +498,64 @@ body{
         padding: 0px;
     }
     .links{
+        padding: none;
+        margin: none;
+        width: 90vw;
         align-items: center;
+        vertical-align: middle;
+        justify-content: space-between;
     }
     .links a{
+        width: 100%;
+        margin: none;
+        margin-bottom: 40px;
         font-size: 5em;
         border-bottom: 2px solid #f5f5f5;
         text-align: center;
-        width: 90%;
-        max-width: 900px;
-        margin: 0px 0px 80px 0px;
     }
-    #bio{
+    .links div{
+        margin: 0px !important;
+    }
+    .work img{
+        height: auto;
+        width: 70vw;
+    }
+    #landscape{
+        width: 70vw;
+    }
+    #maindiv p{
         font-size: 3em;
     }
     #tabs a{
         font-size: 2em;
     }
     #aboutdiv h1{
-        font-size: 2em;
-    }
-    #aboutdiv a{
         font-size: 3em;
+        line-height: 55px;
+    }
+    #textdiv a{
+        font-size: 3em;
+        padding: 10px;
+    }
+    #aboutdiv img{
+        max-width: 600px;
     }
     #background video{
         display: none;
     }
     #flowernospin{
         width: 200px;
+    }
+    .arrow{
+        font-size: 3em;
+        padding: 25px;
+    }
+    .work a{
+        font-size: 3em;
+        line-height: 55px;
+    }
+    #copy{
+        font-size: 3em;
+        line-height: 55px;
     }
   }
